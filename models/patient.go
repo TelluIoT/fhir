@@ -33,6 +33,7 @@ import (
 )
 
 type Patient struct {
+	ID                   string `json:"id,omitempty"`
 	DomainResource       `bson:",inline"`
 	Identifier           []Identifier                    `bson:"identifier,omitempty" json:"identifier,omitempty"`
 	Active               *bool                           `bson:"active,omitempty" json:"active,omitempty"`
